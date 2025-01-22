@@ -154,7 +154,7 @@ const EmailBuilder = () => {
         formData.append('image', file);
       
         try {
-          const response = await fetch('http://localhost:4000/api/uploadImage', {
+          const response = await fetch(`${import.meta.env.VITE_BACKEND}/api/uploadImage`, {
             method: 'POST',
             body: formData,
           });
@@ -181,7 +181,7 @@ const EmailBuilder = () => {
         
           const downloadTemplate = async () => {
             try {
-              const response = await fetch('http://localhost:4000/api/renderAndDownloadTemplate', {
+              const response = await fetch(`${import.meta.env.VITE_BACKEND}/api/renderAndDownloadTemplate`, {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json'
