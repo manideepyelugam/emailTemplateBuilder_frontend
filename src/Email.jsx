@@ -289,7 +289,7 @@ const EmailBuilder = () => {
                   <div>
                     {/* New Content Editor Section */}
                     <div className="mb-4">
-                      <label className="block mb-2">Content</label>
+                      <label className="block mb-2">Enter your Content here !!!</label>
                       <Input
                         type="text"
                         value={selectedElement.content}
